@@ -1,0 +1,111 @@
+.cartContainer{
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    
+}
+
+.cartContainer .cartItem{
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+}
+
+.goToShop{
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #f56231;
+    margin-top: 150px;
+}
+
+.goToShop a{
+    color: #fff;
+}
+
+.details{
+    width: 30%;
+}
+
+.isIncart{
+    width: 100%;
+    background-color: #f3f7f4;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.isIncart .btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btns button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btns button:nth-child(1){
+    background-color: #32f53c;
+}
+
+.btns button:nth-child(2){
+    background-color: #eff1f0;
+    border: 1px solid silver;
+}
+
+.checked{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checked a{
+    padding: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    background-color: #f701ff;
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .cartContainer{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .details{
+        width: 100%;
+    }
+
+    .cartContainer .cartItem{
+        width: 100%;
+    }
+}

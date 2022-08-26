@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header .container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container a{
+    position: relative;
+}
+
+.container a h2{
+    color: #5f1313;
+}
+
+.count{
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+}
